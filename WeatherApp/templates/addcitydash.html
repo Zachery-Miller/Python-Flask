@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add City to Dashboard
+{% endblock %}
+
+{% block main %}
+    <form action="/addcitydash" method="post">
+        <label class="add-city-label top-label">Select a city from the dropdown:</label>
+        <div>
+            <select name="city">
+                <option disable selection>Select a city</option>
+                {% for c in citylist %}
+                    <option value={{c.city_id}}>{{c.city_name}}, {{c.country}}</option>
+                {% endfor %}
+            </select>
+
+        <button class="add-to-dash-button btn btn-primary" type="submit">Add to Dashboard</button>
+        </div>
+
+    </form>
+{% endblock %}

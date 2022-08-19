@@ -1,0 +1,12 @@
+Flask
+Flask-Session
+requests
+cs50
+os
+csv
+logging
+pandas
+re
+werkzeug.security
+werkzeug.utils
+werkzeug.exceptions

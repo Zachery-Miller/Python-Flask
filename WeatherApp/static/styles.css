@@ -1,0 +1,197 @@
+/* CARDS */
+.card
+{
+    border-color: #000 !important;
+    margin-top: 5px;
+}
+
+.temperature
+{
+    font-size: 40px;
+}
+
+.card-title
+{
+    font-size: 36px;
+
+}
+
+.delete-card-button
+{
+    font-size: 12px;
+    color: #fff;
+    font-weight: 900;
+    margin-left: 425px;
+    margin-bottom: -20px;
+}
+
+.card-line-break
+{
+    border: none;
+    height: 3px;
+    color: black;
+    background-color: black;
+    border-color: black;
+}
+
+.high-and-low
+{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* SIDEBAR & NAV */
+.sidebar
+{
+    padding-bottom: 100vh;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 1px 1px 5px 4px #000;
+}
+
+.page-links:hover
+{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+/* LABELS */
+.input-labels-login
+{
+    margin-left: -117px;
+    margin-top: 1em;
+    font-weight: 600;
+}
+
+.input-labels-register
+{
+    margin-left: -117px;
+    margin-top: 1em;
+    font-weight: 600;
+}
+
+.input-labels-register-repeat
+{
+    margin-left: -67px;
+    margin-top: 1em;
+    font-weight: 600;
+}
+
+.input-labels-account
+{
+    margin-left: -44px;
+    margin-top: 1em;
+    font-weight: 600;
+}
+
+.input-labels-account-repeat
+{
+    margin-left: -30px;
+    margin-top: 1em;
+    font-weight: 600;
+}
+
+.add-city-label
+{
+    margin-left: -23px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.add-city-db-manual-labels-city
+{
+    margin-left: -110px;
+    margin-top: 1em;
+    font-weight: 600;
+}
+
+.add-city-db-manual-labels-state
+{
+    margin-left: 3px;
+    margin-top: 1em;
+    font-weight: 600;
+}
+
+.add-city-db-manual-labels-country
+{
+    margin-left: -86px;
+    margin-top: 1em;
+    font-weight: 600;
+}
+
+.hr-break-labels
+{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.log-download-label
+{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.top-label
+{
+    margin-top: 200px;
+}
+
+.data-credit
+{
+    color: gray;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+/* BUTTONS */
+.login-reg-button
+{
+    margin-left: 120px;
+    margin-top: 1em;
+}
+
+.account-buttons
+{
+    margin-left: 40px;
+    margin-top: 1em;
+}
+
+.yes-no-buttons
+{
+    margin-left: 90px;
+    margin-top: 1em;
+}
+
+.add-to-dash-button
+{
+    margin-top: -3px;
+}
+
+.add-to-db-button
+{
+    margin-left: 45px;
+    margin-top: 1em;
+    margin-bottom: 100px;
+}
+
+.log-download-button
+{
+    margin-top: 1em;
+}
+

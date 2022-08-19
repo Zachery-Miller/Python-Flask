@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add City to Database
+{% endblock %}
+
+{% block main %}
+<hr>
+<label class="hr-break-labels">Add City to Database via OpenWeatherMap Geolocator API</label>
+<hr>
+<form action="/addcitydb" method="post">
+    <label class="add-city-db-manual-labels-city">City Name</label>
+    <div>
+        <input autocomplete="off" autofocus id="cityname" name="cityname" placeholder="City Name" type="text">
+    </div>
+
+    <label class="add-city-db-manual-labels-state">State Code (for U.S. Cities)</label>
+    <div>
+        <input id="statecode" name="statecode" placeholder="State Code" type="text">
+    </div>
+
+    <label class="add-city-db-manual-labels-country">Country Code</label>
+    <div>
+        <input id="countrycode" name="countrycode" placeholder="Country Code" type="text">
+    </div>
+
+    <div class="add-to-db-button">
+        <button class="btn btn-primary" type="submit">Add to Database</button>
+    </div>
+
+</form>
+
+<hr>
+<label class="hr-break-labels">Add City or Cities to Database via File Upload</label>
+<hr>
+
+<div>
+    <form action="/downloadtemplate" method="post">
+        <button class="btn btn-primary" type="submit">Download DB Upload Template Here</button>
+    </form>
+</div>
+
+<div class="add-city-db-manual-labels-state">
+    <form action="/fileupload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+</div>
+{% endblock %}

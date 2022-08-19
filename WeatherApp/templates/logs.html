@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Download Logs
+{% endblock %}
+
+{% block main %}
+    <label class="top-label log-download-label">***Log file is updated and replaced after each file upload to the database***</label>
+    <form action="/downloadlogs" method="post">
+        <div class="log-download-button">
+            <button class="btn btn-primary" type="submit">Download Latest Log File</button>
+        </div>
+    </form>
+{% endblock %}

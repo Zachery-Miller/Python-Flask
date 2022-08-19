@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Account Management
+{% endblock %}
+
+{% block main %}
+
+<form action="/account" method="post">
+    <label class="input-labels-account top-label">Enter Old Password</label>
+    <div>
+        <input autocomplete="off" autofocus id="oldpw" name="oldpw" placeholder="Old Password" type="password">
+    </div>
+
+    <label class="input-labels-account">Enter New Password</label>
+    <div>
+
+        <input id="newpw" name="newpw" placeholder="New Password" type="password">
+    </div>
+
+    <label class="input-labels-account-repeat">Repeat New Password</label>
+    <div>
+        <input id="confirmation" name="confirmation" placeholder="Repeat New Password" type="password">
+    </div>
+
+    <div class="account-buttons">
+        <button class=" btn btn-primary" type="submit">Change Password</button>
+    </div>
+
+</form>
+
+<div class="account-buttons">
+    <button id="deleteform" class="btn btn-danger">&nbsp;&nbsp;Delete Account&nbsp;&nbsp;</button>
+</div>
+
+<form id="yesorno" style="display: none" action="/deleteaccount" method="post">
+    <div class="yes-no-buttons">
+        <button class="btn btn-outline-success" id="answer" name="answer" value="yes" type="submit">Yes</button>
+        <button class="btn btn-outline-danger" id="no" value="no" type="button">No</button>
+    </div>
+</form>
+
+<script>
+    let deleteform = document.querySelector('#deleteform');
+    let yesorno = document.querySelector('#yesorno');
+    let btnNo = document.querySelector('#no');
+
+
+    deleteform.addEventListener('click', function() {
+            yesorno.style = "display: block";
+
+        });
+    btnNo.addEventListener('click', function() {
+            yesorno.style = "display: none";
+    });
+</script>
+
+{% endblock %}

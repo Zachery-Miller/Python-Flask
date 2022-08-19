@@ -1,0 +1,43 @@
+2022-08-18 19:22:25,425 DEBUG    Attempting DB upload for uploads/file1.csv
+2022-08-18 19:22:25,426 INFO     Processing line 2 of upload file
+2022-08-18 19:22:25,471 INFO     Cambridge, US entered into DB successfully
+2022-08-18 19:22:25,471 INFO     No errors or warnings found in line 2
+2022-08-18 19:22:25,471 INFO     Processing line 3 of upload file
+2022-08-18 19:22:25,526 INFO     Seattle, US entered into DB successfully
+2022-08-18 19:22:25,526 INFO     No errors or warnings found in line 3
+2022-08-18 19:22:25,527 INFO     Processing line 4 of upload file
+2022-08-18 19:22:25,576 INFO     Denver, US entered into DB successfully
+2022-08-18 19:22:25,576 INFO     No errors or warnings found in line 4
+2022-08-18 19:22:25,577 INFO     Processing line 5 of upload file
+2022-08-18 19:22:25,626 INFO     Berlin, DE entered into DB successfully
+2022-08-18 19:22:25,626 INFO     No errors or warnings found in line 5
+2022-08-18 19:22:25,626 INFO     Processing line 6 of upload file
+2022-08-18 19:22:25,677 INFO     Madrid, ES entered into DB successfully
+2022-08-18 19:22:25,677 INFO     No errors or warnings found in line 6
+2022-08-18 19:22:25,677 INFO     Processing line 7 of upload file
+2022-08-18 19:22:25,731 INFO     Rome, IT entered into DB successfully
+2022-08-18 19:22:25,731 INFO     No errors or warnings found in line 7
+2022-08-18 19:22:25,733 INFO     Processing line 8 of upload file
+2022-08-18 19:22:25,742 WARNING  Tokyo, JP already exists in the database! This line will not submit to database.
+2022-08-18 19:22:25,742 INFO     1 warning found in line 8
+2022-08-18 19:22:25,742 INFO     Processing line 9 of upload file
+2022-08-18 19:22:25,751 WARNING  Shanghai, CN already exists in the database! This line will not submit to database.
+2022-08-18 19:22:25,751 INFO     1 warning found in line 9
+2022-08-18 19:22:25,752 INFO     Processing line 10 of upload file
+2022-08-18 19:22:25,760 WARNING  Mumbai, IN already exists in the database! This line will not submit to database.
+2022-08-18 19:22:25,760 INFO     1 warning found in line 10
+2022-08-18 19:22:25,761 INFO     Processing line 11 of upload file
+2022-08-18 19:22:25,761 ERROR    State code is not numeric. Please update state code to only numeric characters
+2022-08-18 19:22:25,761 ERROR    Country code is not numeric or was not entered. Please update country code to only numeric characters
+2022-08-18 19:22:25,761 ERROR    Lat 'test' is not numeric or was not entered. Please update lat to only numeric characters with the exception of '-' and '.'
+2022-08-18 19:22:25,762 ERROR    Lon 'test' is not numeric or was not entered. Please update lon to only numeric characters with the exception of '-' and '.'
+2022-08-18 19:22:25,762 ERROR    Country is not 2 letters in length or was not entered. Please update country to its 2 letter abbreviation
+2022-08-18 19:22:25,762 WARNING  5 error(s) found in line 11
+2022-08-18 19:22:25,762 INFO     Processing line 12 of upload file
+2022-08-18 19:22:25,763 ERROR    City name is not alphabetic or was not entered. Please update city name to only alphabetic characters.
+2022-08-18 19:22:25,763 WARNING  1 error(s) found in line 12
+2022-08-18 19:22:25,763 INFO     Processing line 13 of upload file
+2022-08-18 19:22:25,763 ERROR    City name is not alphabetic or was not entered. Please update city name to only alphabetic characters.
+2022-08-18 19:22:25,767 ERROR    Country is not alphabetic or was not entered. Please update country to only alphabetic characters
+2022-08-18 19:22:25,767 ERROR    Country is not 2 letters in length or was not entered. Please update country to its 2 letter abbreviation
+2022-08-18 19:22:25,767 WARNING  3 error(s) found in line 13

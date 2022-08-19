@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Dashboard
+{% endblock %}
+
+{% block main %}
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  {% for card in city_list %}
+  <div class="col">
+      <div class="card border border-5 text-center">
+        <div class="card-body">
+          <form action="/remove" method="post">
+
+            <button class="delete-card-button btn btn-danger" name="removecity" id="removecity" type="submit" value="{{ card['city_id'] }}">X</button>
+          </form>
+
+          <h5 class="card-title">{{ card["city"] }}</h5>
+          <hr class="card-line-break">
+          <div class="temperature">{{ card["temp_current"] }} &#176;F</div>
+          <div class="weather-conditions"> {{ card["conditions"] }} </div>
+          <div class="high-and-low">High: {{ card["temp_max"] }} &#176;F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Low: {{ card["temp_min"] }} &#176;F</div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+{% endblock %}
